@@ -34,8 +34,8 @@ const Products = ({addToCart}) => {
                 <div className=' border rounded-lg bg-gray-100 bg-opacity-40 flex flex-col items-center'  key={item.id}>
                     <img src={item.thumbnail} alt={item.title} />
                     <h3 className='mb-4'>{item.title}</h3>
-                    <div className='flex items-center space-x-10 mb-4'>
-                    <p className='text-xl'>{item.price}</p>
+                    <div className='flex items-center gap-10 mb-4'>
+                    <p className='text-xl font-bold'>${item.price}</p>
                     <button className='px-8 py-2 rounded-md bg-cyan-600 hover:bg-blue-600 transition duration-200 ease-in-out text-white ' onClick={() => addToCart(item)}>Add to cart</button>
                     </div>
                 </div>
