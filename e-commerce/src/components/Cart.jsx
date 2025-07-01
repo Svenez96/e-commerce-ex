@@ -22,6 +22,7 @@ const Cart = ({ cartItems, removeFromCart }) => {
           <div className="mt-6 text-lg font-semibold text-right">
             Total: ${total.toFixed(2)}
           </div>
+          <button className="mt-2 p-24 py-2 rounded-md text-xl bg-purple-600 text-white transition duration-200 hover:bg-purple-800">Checkout</button>
       </div>
     );
   };
